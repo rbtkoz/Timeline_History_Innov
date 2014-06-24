@@ -28,13 +28,7 @@
     <!-- bootstrap -->
 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  
 
 
     <!-- build:css styles/components/main.min.css -->
@@ -42,108 +36,126 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- adding custom js -->
-     <script  src="scripts/main.js"></script>
-     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="scripts/jquery.scrollTo.js"></script>
+    <script  src="scripts/main.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     
-<div id="bigspace">
-<div class="planetwrapper">
-<!-- Sun-->
-<!-- <div id="sunwrap">
-<svg version="1.1" id="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-width="10px" height="10px" viewBox="0 0 10 10">
-<circle cx="5" cy="5" r="5"/>
-</svg>
-<div id="suntxt" class="labeltext">
-Sun
-</div>
-</div> -->
+    <div id="bigspace">
+      <div class="planetwrapper">
+      <!-- Sun-->
+      <!-- <div id="sunwrap">
+      <svg version="1.1" id="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="10px" height="10px" viewBox="0 0 10 10">
+      <circle cx="5" cy="5" r="5"/>
+      </svg>
+      <div id="suntxt" class="labeltext">
+      Sun
+      </div>
+      </div> -->
 
-<!-- Mercury-->
-
-
-<div id="merctxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="merclabel">Transistor</span><br/>
-</div>
+      <!-- Mercury-->
 
 
-<!-- Venus-->
-
-<div id="venustxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="venuslabel">Negative Feedback Amplifier</span>
-</div>
-
-<!-- Earth-->
-
-<div id="earthtxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="earthlabel">Laser</span><br/>
-<div id="you-are-here" style="font-size:.3em; color:#737373">You Are Here</div>
-</div>
-
-<!-- Moon-->
-<div id="moontxt" class="labeltext">
-<span id="moonlabel">C</span><br/>
-<img src="images/assets/transistor.png">
-</div>
+        <div id="merctxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="merclabel">Transistor</span><br/>
+        </div>
 
 
-<!-- Mars-->
+        <!-- Venus-->
 
-<div id="marstxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="marslabel">Cellular Networks</span>
-</div>
+        <div id="venustxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="venuslabel">Negative Feedback Amplifier</span>
+        </div>
 
-<!-- Jupiter-->
+        <!-- Earth-->
 
-<div id="jupitertxt" class="labeltext">
-<img src="images/assets/transistor.png" style="margin-left:15px"><br/>
-<span id="jupiterlabel">Telephone</span>
-</div>
-<!--Jupiter Moons -->
-<div id="jupitermoons" class="labeltext">
-<span id="io"><img src="images/assets/transistor.png" height="1px" width="1px" class="moondot"><span id="iolabel">Io</span></span>
-<span id="europa"><img src="images/assets/transistor.png" height="1px" width="1px" class="moondot"><span id="europalabel">Europa</span></span>
-<span id="ganymede"><img src="images/assets/transistor.png" height="2px" width="2px" class="moondot"><span id="ganymedelabel">Ganymede</span></span>
-<span id="callisto"><img src="images/assets/transistor.png" height="1px" width="1px" class="moondot"><span id="callistolabel">Callisto</span></span>
-</div>
+        <div id="earthtxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="earthlabel">Laser</span><br/>
+        <div id="you-are-here" style="font-size:.3em; color:#737373">You Are Here</div>
+        </div>
 
-<!-- Saturn-->
-<img src="images/assets/transistor.png" id="saturn"><br/>
-<div id="saturntxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="saturnlabel">Unix</span>
-</div>
+        <!-- Moon-->
+        <div id="moontxt" class="labeltext">
+        <span id="moonlabel">C</span><br/>
+        <img src="images/assets/transistor.png">
+        </div>
 
-<!-- Uranus -->
 
-<div id="uranustxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="uranuslabel">Satellite Communication</span>
-</div>
+        <!-- Mars-->
 
-<!-- Neptune -->
+        <div id="marstxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="marslabel">Cellular Networks</span>
+        </div>
 
-<div id="neptunetxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="neptunelabel">Transistor</span>
-</div>
+        <!-- Jupiter-->
 
-<!-- Pluto -->
+        <div id="jupitertxt" class="labeltext">
+        <img src="images/assets/transistor.png" style="margin-left:15px"><br/>
+        <span id="jupiterlabel">Telephone</span>
+        </div>
+        
+        <!-- Saturn-->
+        <img src="images/assets/transistor.png" id="saturn"><br/>
+        <div id="saturntxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="saturnlabel">Unix</span>
+        </div>
 
-<div id="plutotxt" class="labeltext">
-<img src="images/assets/transistor.png"><br/>
-<span id="plutolabel">Cell phone</span><span style="font-size:.25em"><br/></span>
-<span id="we-still-love" style="font-size:.25em; text-transform:none">(we still love you)</span>
-</div>
+        <!-- Uranus -->
 
-</div>
-</div>
+        <div id="uranustxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="uranuslabel">Satellite Communication</span>
+        </div>
+
+        <!-- Neptune -->
+
+        <div id="neptunetxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="neptunelabel">Transistor</span>
+        </div>
+
+        <!-- Pluto -->
+
+        <div id="plutotxt" class="labeltext">
+        <img src="images/assets/transistor.png"><br/>
+        <span id="plutolabel">Cell phone</span><span style="font-size:.25em"><br/></span>
+        <span id="we-still-love" style="font-size:.25em; text-transform:none">(we still love you)</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu"> 
+      <ul>
+        <li><a href="#prevanchor" class="prevjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#merctxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#venustxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#earthtxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#marstxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#jupitertxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#saturntxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#uranustxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#neptunetxt" class="planetjump"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#plutotxt" class="mine"><img src="images/assets/saluton.png"></a></li>
+        <li><a href="#nextanchor" class="nextjump"><img src="images/assets/saluton.png"></a></li>
+      </ul>
+    </div>
+    
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

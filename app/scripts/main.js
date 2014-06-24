@@ -17,6 +17,19 @@
  *
  */
 (function () {
+
+
+  // quick test for next to last element scroll
+  $(function(){
+      $('.mine').click(function() {
+        console.log("hello")
+          $.scrollTo( '#plutotxt', 1500 );
+      });
+  });
+
+
+
+
   'use strict';
 
   var querySelector = document.querySelector.bind(document);
