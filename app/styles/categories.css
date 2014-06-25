@@ -18,7 +18,7 @@ html, body {
 #bigspace {
 /*    position: absolute;
 *//*    left: 2400px;
-*/  background-color: rgb(125 135 150);
+*/  background-color: rgb(0,135,150);
     background-repeat: repeat-x;
     background-position: left bottom;
     width: 100%;
@@ -33,6 +33,7 @@ html, body {
 .title h2{
     font-size: 68px;
     margin-top: 2%;
+    color:white;
 }
 
 .chooser{
@@ -44,6 +45,7 @@ html, body {
 .chooser h3{
     margin-top: 5%;
     font-size: 48;
+    color:white;
 
 }
 
@@ -74,12 +76,12 @@ font-size: 36px;
 }
 
 .col-md-3{
-    color:black;
+    color:white;
 
 }
 
 .col-md-2{
-    color:black;
+    color:white;
 
 }
 
