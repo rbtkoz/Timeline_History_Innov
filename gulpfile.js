@@ -121,7 +121,7 @@ gulp.task('serve', function () {
     },
     notify: false
   });
-
+  gulp.watch(['app/*.html'], reload);
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.{css,scss}'], ['styles']);
   gulp.watch(['.tmp/styles/**/*.css'], reload);
