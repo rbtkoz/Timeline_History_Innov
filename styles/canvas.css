@@ -1,0 +1,62 @@
+
+.container {
+  width:10000px;
+  position: absolute;
+}
+
+.left {
+	position: absolute;
+	left: 129px;
+	top: 449px;
+	background:yellow;
+	width:100px;
+	height:100px;
+}
+
+.right {
+	position: absolute;
+	left: 4430px;
+	top: 449px;
+	background:red;
+	width:100px;
+	height:100px;
+}
+
+article {
+	width:1000px;
+	height: auto;
+}
+
+canvas {
+	position: fixed;
+	z-index: -1;
+}
+
+body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100%;
+
+  }
+  .container {
+      margin: 0;
+      padding: 0;
+      height: 90%;
+  }
+
+  #background {
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+  }
+
+  @media(max-width:1200px) {
+      .container {
+          margin: 0 50px;
+      }
+      #background {
+          width: 90%;
+          height: auto;
+      }
+  }

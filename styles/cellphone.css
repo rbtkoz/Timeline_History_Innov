@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@media (min-width: @screen-sm-min) { 
+ #tour-btn p {
+    padding-top: 24px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 79px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: ApexATT-Bold;
+  }
+}
+
+/* Medium devices (desktops, 992px and up)
+ */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+i {
+  color:black;
+  padding-left:25px;
+  padding-top:1px;
+}
+
+html {
+  height: 100%;
+  width: 20000px;
+  /*overflow: hidden;*/
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#element::-webkit-scrollbar { 
+  display: none; 
+}
+
+.menu {
+  color:black;
+}
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.go {
+ position:relative;
+ left:100px;
+ top: 300px;
+}
+
+ul li {
+/*  background-color:black;
+*/}

@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@media (min-width: @screen-sm-min) { 
+ #tour-btn p {
+    padding-top: 24px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 79px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: ApexATT-Bold;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#element::-webkit-scrollbar { 
+  display: none; 
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron {
+  background:none !important;
+  height:100%;
+}
+
+video {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+#tour-btn {
+  border:2px solid #FCB314;
+  border-radius: 2px;
+  color:white;
+  background: none;
+  transition: all .5s linear;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+#tour-btn p {
+  padding-top: 24px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 110px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: ApexATT-Bold;
+}
+
+#tour-btn:hover {
+  background: #FCB314;
+}
+
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+.centering {
+  float:none;
+  margin:0 auto;
+  width: 400px;
+}
+
+
+
+
