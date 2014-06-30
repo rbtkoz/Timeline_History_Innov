@@ -4,7 +4,7 @@ $(document).ready(function() {
 	
 	//ADD VIDEO TO SCREEN
 
-	$(".jumbotron").prepend("<video loop src='media/ATTHistoryVid_1.mp4' id='video' autoplay='autoplay'></video>");
+	$(".jumbotron").prepend("<video loop src='http://t-mrkt.com/Lab/media/ATTHistoryVid_1.mp4' id='video' autoplay='autoplay'></video>");
 
 	$("video").css("display", "none");
 	$("video").fadeIn(500);
