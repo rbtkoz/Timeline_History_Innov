@@ -3,7 +3,7 @@
   width:10000px;
   position: absolute;
 }
-
+/*
 .left {
 	position: absolute;
 	left: 129px;
@@ -14,14 +14,60 @@
 }
 
 .right {
-	position: absolute;
-	left: 4430px;
+	position: fixed;
 	top: 449px;
 	background:red;
 	width:100px;
 	height:100px;
+}*/
+
+.first{
+ position: fixed; 
+ background:green;
+  width:100px;
+  height:100px;
+ -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
 }
 
+.second {
+ position: fixed; 
+ background:red;
+  width:100px;
+  height:100px;
+ -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.third {
+ position: fixed; 
+ background:yellow;
+  width:100px;
+  height:100px;
+ -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.fourth {
+ position: fixed;
+ background:blue;
+  width:100px;
+  height:100px; 
+ -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
 article {
 	width:1000px;
 	height: auto;

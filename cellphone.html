@@ -10,6 +10,7 @@
    
     <link rel="stylesheet" href="styles/cellphone.css">
     <link rel="stylesheet" href="styles/canvas.css">
+     <link rel="stylesheet" href="styles/animate.css">
     <!-- font awesome -->
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -24,13 +25,28 @@
             <div class="col-md-5 go">
                 <p class="lead"> Swipe left to start this experience<i class="fa fa-long-arrow-right icon-4x"></i></p>
             </div>
+            
+            <article id="one" class="hidden">
+                <div class='first'></div>
+            </article>
 
-            <article>
-                <a id="left" class="left snap"></a>
+             <article id="two" class="hidden">
+                <div class='second'></div>
             </article>
-            <article>
-                <a id="right" class="right snap"></a>
+
+             <article id="three" class="hidden">
+                <div class='third'></div>
             </article>
+
+             <article id="four" class="hidden">
+                <div class='fourth'></div>
+            </article>
+
+          <!--   <article id='invention'>
+                <a id ="left"></a>
+
+            </article> -->
+           
             <canvas id="background" width="1920" height="1080"></canvas>
           <!--   <ul>
                 <li><a href="#left" onclick="$.scrollTo( '#left', 1000 ); return false;">Left</a></li>
