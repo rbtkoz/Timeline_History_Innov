@@ -88,13 +88,13 @@ window.addEventListener('scroll', function(e) {
 	
 	} if (currentLocation == parseInt(arr)){
    	console.log("FIRST ");
-   	$("#one").toggleClass(' hidden');
+   	$("#one").toggleClass("hidden");
    	console.log("ON");
   	
   	} if ( currentLocation == parseInt(arr+20)){
    	console.log("OFF");
    	
-   	$("#one").toggleClass(" hidden");
+   	$("#one").toggleClass("hidden");
 
 
 
@@ -103,10 +103,9 @@ window.addEventListener('scroll', function(e) {
    	$("#two").toggleClass("hidden");
    	console.log("ON");
   	
-  	} if ( currentLocation == parseInt((arr*2)+20)){
+  	} if (currentLocation == parseInt((arr*2)+20)){
    	console.log("OFF");
-   	
-   	$("#two").toggleClass(" hidden");
+   	$("#two").toggleClass("hidden");
 
 
 
@@ -115,18 +114,16 @@ window.addEventListener('scroll', function(e) {
    	$("#three").toggleClass("hidden");
    	console.log("ON");
   	
-  	} if ( currentLocation == parseInt((arr*3)+20)){
+  } if (currentLocation == parseInt((arr*3)+20)){
    	console.log("OFF");
-   	
    	$("#three").toggleClass("hidden");
 
-
-	} if (currentLocation == parseInt(images.length-20)){
+	} if (currentLocation == parseInt((arr*4)-30)){
    	console.log("FOURTH");
    	$("#four").toggleClass("hidden");
    	console.log("ON");
   	
-  	} if ( currentLocation == parseInt(images.length)){
+  } if (currentLocation == parseInt((arr*4)-10)){
    	console.log("OFF");
    	
    	$("#four").toggleClass("hidden");
@@ -156,7 +153,7 @@ window.addEventListener('scroll', function(e) {
   
 	}	if (currentLocation > images.length-1) {
 		console.log( 'i am too much');
-		currentLocation = images.length;
+		currentLocation = images.length-1;
 		console.log("-1"+"currentLocation =" +currentLocation);
 		console.log(images.length +"how many images");
 	}
