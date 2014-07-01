@@ -21,11 +21,18 @@
 @media (min-width: @screen-lg-min) { ... }
 
 i {
-  color:black;
+  color: rgba(255, 255, 255, 0.6);
   padding-left:25px;
   padding-top:1px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
+canvas {
+  background-color: black;
+}
 html {
   height: 100%;
   width: 20000px;
@@ -38,6 +45,29 @@ html {
   display: none; 
 }
 
+.faux{
+  color:black;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+.lead{
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.load {
+  color:black;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 .menu {
   color:black;
 }
