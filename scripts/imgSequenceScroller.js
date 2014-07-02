@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var totalImages = 298;
 var images = new Array();
 for(var i = 1; i < totalImages; i++) {
@@ -177,4 +178,6 @@ function setImage(newLocation) {
 }
 
 
+=======
+>>>>>>> 2d20ece34192cf99a31f37b3942a7f5accb80654
 
