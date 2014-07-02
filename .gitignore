@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 media/*
+=======
+node_modules
+.sass-cache
+dist
+.tmp
+>>>>>>> 5d2d19d785a7891780a98d8a64edfc6de7bf93c8
