@@ -68,7 +68,7 @@ window.addEventListener('scroll', function(e) {
 	if (st > lastScroll){
 
 		console.log("swiping left!");
-		currentLocation += 2;
+		currentLocation += 1;
 		console.log("+1" +"currentLocation = " +currentLocation);
 		// incrementer = incrementer +100;
 		// loc = currentLocation;
@@ -76,7 +76,7 @@ window.addEventListener('scroll', function(e) {
 
  	} if (st < lastScroll ){
 		console.log("swiping right!");
-		currentLocation -= 2;
+		currentLocation -= 1;
 		console.log("-1"+"currentLocation =" +currentLocation);
 		// incrementer = incrementer -100;
 		// loc = currentLocation;
