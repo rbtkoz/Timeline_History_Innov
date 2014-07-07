@@ -57,28 +57,29 @@ $(document).mousemove(function( event ) {
 	// console.log(window.scrollX);
 	// var st = $('body').animate({scrollLeft: incrementer}, 1000);
 
-	var st = mouseX;
-	var lastScroll = 0;
+	// var lastScroll = 0;
+
+	currentLocation = mouseX;
 	
 
- 	console.log(st +" st value")
-	if (st > lastScroll){
+ // 	console.log(mouseX +"mouseX value")
+	// if (mouseX > lastScroll){
 
-		console.log("swiping left!");
-		currentLocation += 2;
-		console.log("+1" +"currentLocation = " +currentLocation);
+	// 	console.log("swiping left!");
+	// 	currentLocation += 2;
+	// 	console.log("+1" +"currentLocation = " +currentLocation);
 
 
- 	} if (st < lastScroll ){
-		console.log("swiping right!");
-		currentLocation -= 2;
-		console.log("-1"+"currentLocation =" +currentLocation);
+ // 	} if (mouseX < lastScroll ){
+	// 	console.log("swiping right!");
+	// 	currentLocation -= 2;
+	// 	console.log("-1"+"currentLocation =" +currentLocation);
 
-	} if (currentLocation < 0) {
-		console.log("im less than zero");
-		currentLocation = 0;
+	// } if (currentLocation < 0) {
+	// 	console.log("im less than zero");
+	// 	currentLocation = 0;
 
-}
+	// }
 	// } if (currentLocation == parseInt(arr)){
  //   	console.log("FIRST ");
  //   	$("#one").toggleClass("hidden");
@@ -159,7 +160,7 @@ $(document).mousemove(function( event ) {
  //        $("i").removeClass("faux");
  //    }
     //updating value to latest 
-		lastScroll = st;
+		// lastScroll = mouseX;
 		setImage(currentLocation);
 
 });
