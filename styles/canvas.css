@@ -1,7 +1,8 @@
 
 .container {
-  width:10000px;
+  width:auto !important;
   position: absolute;
+  overflow-x:hidden;
 }
 /*
 .left {

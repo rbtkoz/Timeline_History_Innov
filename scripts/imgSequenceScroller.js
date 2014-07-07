@@ -59,7 +59,7 @@ $(document).mousemove(function( event ) {
 
 	// var lastScroll = 0;
 
-	currentLocation = mouseX;
+	currentLocation = mouseX/2;
 	
 
  // 	console.log(mouseX +"mouseX value")

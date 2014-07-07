@@ -41,7 +41,7 @@ canvas {
 }
 html {
   height: 100%;
-  width: 10000px;
+  width: 100%;
   /*overflow: hidden;*/
   min-width: 100%;
   min-height: 100%;
