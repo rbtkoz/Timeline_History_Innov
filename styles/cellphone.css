@@ -1,5 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 1px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background:black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+    -webkit-box-shadow: inset 0 0 6px black; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: black; 
+}
+
 @media (min-width: @screen-sm-min) { 
  #tour-btn p {
     padding-top: 24px;
@@ -42,7 +61,7 @@ canvas {
 html {
   height: 100%;
   width: 10000px;
-  /*overflow: hidden;*/
+  overflow-x: scroll;
   min-width: 100%;
   min-height: 100%;
 }
