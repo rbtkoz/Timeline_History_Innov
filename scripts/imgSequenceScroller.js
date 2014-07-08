@@ -1,4 +1,5 @@
 var totalImages = 299;
+
 var images = new Array();
 for(var i = 1; i < totalImages; i++) {
 	var filename = 'http://t-mrkt.com/Lab/media/MASTERCOMP_'; // Filename of each image
