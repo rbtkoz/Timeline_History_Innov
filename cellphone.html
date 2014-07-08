@@ -62,7 +62,7 @@
         <script src="scripts/main.js"></script>
         <script src="scripts/imgSequenceScroller.js"></script>
         <script src="scripts/jquery.scrollstop.js"></script>
-        <script src="scripts/jquery.scrollsnap.js"></script>
+        <script src="jquery.nicescroll.js"></script>
 
            
         
@@ -70,12 +70,11 @@
     </div>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $(document).scrollsnap({
-                snaps: '.snap',
-                proximity: 50
-            });
-        });
+      $(document).ready(
+        function() { 
+          $("html").niceScroll();
+        }
+      );
     </script>
 
 
