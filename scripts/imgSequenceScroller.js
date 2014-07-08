@@ -88,13 +88,13 @@ window.addEventListener('scroll', function(e) {
 	
 	} if (currentLocation == parseInt(arr)){
    	console.log("FIRST ");
-   	$("#one").toggleClass("hidden");
+   	$("#one").animate({ opacity: 0 }, 2000).toggleClass("hidden");
    	console.log("ON");
   	
   	} if ( currentLocation == parseInt(arr+20)){
    	console.log("OFF");
    	
-   	$("#one").toggleClass("hidden");
+   	$("#one").animate({ opacity: 1 }, 2000).toggleClass("hidden");
 
 
 
