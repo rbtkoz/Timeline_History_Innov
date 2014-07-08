@@ -1,7 +1,7 @@
-var totalImages = 298;
+var totalImages = 299;
 var images = new Array();
 for(var i = 1; i < totalImages; i++) {
-	var filename = 'http://t-mrkt.com/Lab/media/LabLobbyTest_'; // Filename of each image
+	var filename = 'http://t-mrkt.com/Lab/media/MASTERCOMP_'; // Filename of each image
 	filename += i + '.png';
 	var img = new Image;
 	img.src = filename;
