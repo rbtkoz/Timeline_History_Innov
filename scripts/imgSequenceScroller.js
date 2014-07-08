@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-var totalImages = 298;
-
-=======
 var totalImages = 299;
->>>>>>> 5c7e92dcf50de3a1adde24cfe0f2f9d2ea68e0e0
+
 var images = new Array();
 for(var i = 1; i < totalImages; i++) {
 	var filename = 'http://t-mrkt.com/Lab/media/MASTERCOMP_'; // Filename of each image
