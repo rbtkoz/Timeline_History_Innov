@@ -170,8 +170,10 @@ window.addEventListener('scroll', function(e) {
     //adding in the fixed nav
     if (currentLocation > 100) {
         $(".timeline-nav").removeClass("hidden fadeOutDown animated").addClass("fadeInUp animated");
+        $(".row-fluid").css({"vertical-align": "bottom"});
     } else  {
         $(".timeline-nav").removeClass("fadeInUp animated").addClass("fadeOutDown animated");
+        $(".row-fluid").css({"vertical-align": "middle"});
     }
     //updating value to latest 
 		lastScroll = st;
@@ -180,7 +182,7 @@ window.addEventListener('scroll', function(e) {
 });
 
 function setImage(newLocation) {
-	context.drawImage(images[newLocation], 0, 0, 1920, 1080);
+	context.drawImage(images[newLocation], 0, 0, canv.width, canv.height);
 	console.log(images.length + "length of images");
 }
 

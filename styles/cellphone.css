@@ -174,8 +174,10 @@ canvas {
 
 .timeline-nav {
   position: fixed !important;
-  top: 90%;
   z-index: 100;
+  width: 100%;
+  text-align: center;
+  bottom: 40px;
 }
 
 .timeline-nav ul li {
@@ -237,3 +239,5 @@ canvas {
 
 .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
 
+
+.row-fluid-nav {height: 100%; display:table-cell; vertical-align: bottom;}
