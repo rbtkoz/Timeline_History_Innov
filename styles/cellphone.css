@@ -5,6 +5,7 @@
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
+}
 /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 1px;
@@ -24,29 +25,25 @@
   background: black; 
 }
 
-@media (min-width: @screen-sm-min) { 
- #tour-btn p {
-    padding-top: 24px;
-    padding-right: 80px;
-    padding-bottom: 20px;
-    padding-left: 79px;
-    margin: auto;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: ApexATT-Bold;
-  }
+html {
+  height: auto !important;
+  width: 10000px!important;
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: scroll;
+  color:white !important;
+  font-family:omnes_attmedium !important;
 }
 
-/* Medium devices (desktops, 992px and up)
- */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
 
 i {
-  color: white;
-  font-style: normal;
+  font-style: normal !important;
 }
 
 a {
@@ -66,16 +63,17 @@ article {
 
 canvas {
   background-color: black;
+  position: fixed;
+  z-index: -1;
+  left: 0;
 }
 
-html, body {
-  height: 100%;
-  width: 10000px;
-  overflow-x: scroll;
-  min-width: 100%;
-  min-height: 100%;
-  color:white !important;
-  font-family:omnes_attmedium !important;
+#container {
+  position: relative;
+  color:white;
+  margin: 0;
+  padding: 0;
+  height: 1080px;
 }
 
 #element::-webkit-scrollbar { 
@@ -109,31 +107,6 @@ html, body {
     transition: all 0.5s ease;
 }
 
- 
-
-#one {
-/*  display:none;
-   -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-*/}
-
-
-#two {
-/*  display:none;
-*/}
-
-
-#three {
-/*  display:none;
-*/}
-
-
-#four {
-/*  display:none;
-*/}
-
 .first{
  background:green;
   width:100px;
@@ -151,9 +124,6 @@ html, body {
     transition: all 0.5s ease;
 }
 
-
-}
-
 .third {
  background:yellow;
   width:100px;
@@ -162,9 +132,6 @@ html, body {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
- 
-
 }
 
 .fourth {
@@ -177,16 +144,8 @@ html, body {
     transition: all 0.5s ease;
 }
 
-
-}
 .menu {
   color:black;
-}
-body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
 }
 
 .drag {
@@ -196,11 +155,14 @@ body {
 }
 
 .go {
- position:relative;
+  position:relative;
+  color:white;
+
 }
 
 .go i {
   font-size: 36px;
+  font-style: normal !important;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -210,6 +172,7 @@ body {
 .timeline-nav {
   position: fixed !important;
   top: 90%;
+  z-index: 100;
 }
 
 .timeline-nav ul li {
@@ -243,7 +206,6 @@ body {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 100;
 }
 
 .year:hover {
@@ -263,6 +225,7 @@ body {
   padding-left:50px;
 }
 
-ul li {
-/*  background-color:black;
-*/}
+.wtf {
+  color:red;
+}
+
