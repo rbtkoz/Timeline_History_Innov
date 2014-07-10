@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="styles/fonts.css" type="text/css" charset="utf-8" />
 
     <!-- font awesome -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <!-- adding custom js -->
     <script src="scripts/jquery-1.11.1.js"></script>
     <script src="scripts/jquery.scrollTo.js"></script>
     <script  src="scripts/main.js"></script>
+    <script  src="scripts/raphael.js"></script>
+    <script  src="scripts/lazylinepainter.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -43,24 +45,30 @@
 
       <div class ="row">
         <div class="col-md-8 col-md-offset-2">
+         
           <div class ="text-center desc">
             <!-- <h3><div class ="pulse1">Select one of the categories below to explore the innovations that made today possible</div></h3> -->
             <h3>Select one of the categories below to explore the innovations that made today possible</h3>
           </div>
         </div>
       </div>
-        
+<!-- 
+    <div id ="paper">  
+    </div>
+         -->
 
         <div class="catcontainer">
           <div class ="categories">
             <div class = "row text-center col-sm-offset-2">
+              
+
               <a href="cellphone.html">
-                <div class="col-md-2">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
+                <div id="cellphone" class="col-md-2">
+                  <svg  version="1.1" id="Layer_1" class ="twinkle" xmlns="http://www.w3.org/2000/svg" 
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-                    <rect x="-291.5" y="-437" width="16255" height="1080"/>
-                    <g>
+<!--                     <rect x="-291.5" y="-437" width="16255" height="1080"/>
+ -->                <g>
                       <g>
                         <path fill="#FDC243" d="M74.54,36.736c-22.123,0-40.06,17.936-40.06,40.059c0,22.125,17.937,40.061,40.06,40.061
                         c22.124,0,40.06-17.936,40.06-40.061C114.6,54.672,96.664,36.736,74.54,36.736z"/>
@@ -72,17 +80,17 @@
                       h8.935c2.279,0,4.126-1.848,4.126-4.127V63.246c0-2.279-1.847-4.127-4.126-4.127H65.828c-2.279,0-4.126,1.848-4.126,4.127v33.293
                       c0,2.279,1.847,4.127,4.126,4.127h17.447c2.266,0,4.103-1.838,4.103-4.104"/>
                     </g>
-                    <rect id="_x3C_Slice_x3E_" x="10.5" y="25" fill="none" width="125" height="107"/>
-                  </svg><h2 class="description">cellphone</h2>
+                <!--     <rect id="_x3C_Slice_x3E_" x="10.5" y="25" fill="none" width="125" height="107"/> -->
+                  </svg><h2 class="description">cellphones</h2>
                 </div>
               </a>
 
                 <a href="cellphone.html">
-                <div class="col-md-2 ">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <div class="col-md-2">
+                  <svg version="1.1" id="Layer_2" class ="twinkle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-                    <rect x="-575.333" y="-437" width="16255" height="1080"/>
-                    <g>
+<!--                     <rect x="-575.333" y="-437" width="16255" height="1080"/>
+ -->                    <g>
                       <g>
                         <path fill="#FF8E33" d="M72.824,36.833c-22.124,0-40.06,17.937-40.06,40.06c0,22.125,17.937,40.06,40.06,40.06
                         c22.123,0,40.06-17.935,40.06-40.06C112.884,54.77,94.947,36.833,72.824,36.833z"/>
@@ -141,10 +149,10 @@
                 
                 <a href="cellphone.html">
                 <div class="col-md-2">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" id="Layer_3" class ="twinkle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-                  <rect x="-852.667" y="-437" width="16255" height="1080"/>
-                  <g>
+<!--                   <rect x="-852.667" y="-437" width="16255" height="1080"/>
+ -->                  <g>
                     <g>
                       <path fill="#9A3498" d="M76.613,37.184c-22.124,0-40.06,17.936-40.06,40.06s17.936,40.06,40.06,40.06
                         c22.123,0,40.06-17.936,40.06-40.06S98.736,37.184,76.613,37.184z"/>
@@ -181,10 +189,10 @@
               <!--  -->
                 <a href="cellphone.html">
                 <div class="col-md-2">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" id="Layer_4" class ="twinkle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-                  <rect x="-1135.333" y="-437" width="16255" height="1080"/>
-                  <g>
+<!--                   <rect x="-1135.333" y="-437" width="16255" height="1080"/>
+ -->                  <g>
                     <g>
                       <path fill="#3895C3" d="M74.942,35.736c-22.123,0-40.06,17.936-40.06,40.059c0,22.125,17.937,40.061,40.06,40.061
                       c22.124,0,40.06-17.936,40.06-40.061C115.002,53.672,97.066,35.736,74.942,35.736z"/>
@@ -201,10 +209,10 @@
 
               <a href="cellphone.html">
                 <div class="col-md-2">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg version="1.1" id="Layer_5" class ="twinkle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-                <rect x="-1413.333" y="-437" width="16255" height="1080"/>
-                <g>
+<!--                 <rect x="-1413.333" y="-437" width="16255" height="1080"/>
+ -->                <g>
                   <g>
                     <g>
                       <path fill="#8BC94C" d="M73.626,36.736c-22.124,0-40.06,17.936-40.06,40.059c0,22.125,17.936,40.061,40.06,40.061
@@ -225,9 +233,6 @@
                 </g>
                 </svg><h2 class ="description">music<h2></div>
               </a>
-
-
-
             </div>
           </div>
         
@@ -246,6 +251,7 @@
       
     </div>
   </div>
+
 
 
 
