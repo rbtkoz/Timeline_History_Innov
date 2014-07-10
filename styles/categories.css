@@ -56,24 +56,24 @@ html, body {
     display:block;
     margin:auto;
     position:relative;
-    top: 20px;
+    top: 80px;
     font-family: omnes_attlight;
     font-size:16px;
     text-transform:uppercase;
-        -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing:antialiased;
 }
 
 .col-md-3{
     color:rgba(255, 255, 255, 0.9);
 /*    -webkit-font-smoothing:antialiased;
-*/
+
 }
 
 .col-md-2{
     color:rgba(255, 255, 255, 0.9);
     text-align: center;
-/*    -webkit-font-smoothing:antialiased;
-*/
+*//*    -webkit-font-smoothing:antialiased;
+
 }
 .col-md-8{
     text-align: center;
@@ -87,11 +87,11 @@ svg {
 height:100px;*/
 
 }
-
+/*
 #cell{
     position:relative;
     left:4.2%;
-}
+}*/
 .home{
     
 /*    padding-top:200px;
@@ -103,6 +103,76 @@ height:100px;*/
     color: white;
 
 }
+
+/*CSS circles*/
+
+
+#cellphone_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 80px;
+    height: 80px;
+    background: rgba(253,194,67, 1.0);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#tv_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    background: rgba(255,142,51, 1.0);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#internet_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    background: rgba(154,52,152, 1.0);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+#space_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    background: rgba(56,149,195, 1.0);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#music_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    background: rgba(139,201,76, 1.0);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+
+/*#cellphone_line path{
+   
+    width:100px !important;
+    height:100px;
+}*/
+
 
 /*css3 animation on call to action-----------------------------------------*/
 
