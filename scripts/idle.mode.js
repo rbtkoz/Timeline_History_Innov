@@ -15,7 +15,7 @@ $(document).ready(function() {
 	$(".tour-btn").click(function(e) {
 		e.preventDefault();
     $("video").fadeOut(300, function() { 
-     window.location.href = "main.html";
+     window.location.href = "categories.html";
     });
 	});
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
 	// No activity do something.
 	function inActive(){
 		$("body").fadeOut(300, function() { 
-	   	window.location.href = "index.html";
+	   	window.location.href = "idle.html";
 	   	$("body").fadeIn("slow");
 	    $("#video").get(0).play();
 	  });
