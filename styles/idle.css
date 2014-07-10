@@ -15,12 +15,6 @@
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
-
 a {
   text-decoration: none !important;
 }
@@ -55,8 +49,7 @@ video {
   right: 0px;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
   z-index: -1000;
   overflow: hidden;
 }
@@ -64,8 +57,7 @@ video {
 #tour-btn {
   border:4px solid #FCB314;
   border-radius: 2px;
-  color:white;
-  background: none;
+  background: #FCB314;
   z-index: 1;
   margin-top: 50px;
   -webkit-transition: all 0.5s ease;
@@ -81,7 +73,7 @@ video {
   font-weight: bold;
   font-size: 18px;
   font-family: omnes_attmedium;
-  color: #FCB314;
+  color: black !important;
   text-decoration: none;
   letter-spacing: 3px;
   text-align: center;
@@ -92,11 +84,12 @@ video {
 }
 
 #tour-btn:hover {
-  background: #FCB314;
+  background: none;
   text-decoration: none !important;
 }
+
 #tour-btn p:hover {
- color: black !important;
+  color: #FCB314 !important;
 }
 
 .container-fluid{
