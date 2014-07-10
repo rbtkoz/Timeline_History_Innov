@@ -56,20 +56,20 @@ $(canv)
 var st = $('body').animate({scrollLeft: 0}, 1000);
 
 window.addEventListener('scroll', function(e) {
-
+ 
 
 	// e.preventDefault();
 	// console.log(window.scrollX);
 	// var st = $('body').animate({scrollLeft: incrementer}, 1000);
 
 	var st = $(this).scrollLeft();
+  // var st = $(this).animate( { scrollLeft: '+2' }, 1000, 'easeOutQuad' );
 	
 
  	console.log(st +" st value")
 	if (st > lastScroll){
-
 		console.log("swiping left!");
-		currentLocation += 2;
+		currentLocation += 1;
 		console.log("+1" +"currentLocation = " +currentLocation);
 		// incrementer = incrementer +100;
 		// loc = currentLocation;
@@ -77,7 +77,7 @@ window.addEventListener('scroll', function(e) {
 
  	} if (st < lastScroll ){
 		console.log("swiping right!");
-		currentLocation -= 2;
+		currentLocation -= 4;
 		console.log("-1"+"currentLocation =" +currentLocation);
 		// incrementer = incrementer -100;
 		// loc = currentLocation;
@@ -89,13 +89,13 @@ window.addEventListener('scroll', function(e) {
 	
 	} if (currentLocation == parseInt(arr)){
    	console.log("FIRST ");
-   	$("#one").toggleClass("hidden");
+   	$("#one").animate({ opacity: 0 }, 2000).toggleClass("hidden");
    	console.log("ON");
   	
   	} if ( currentLocation == parseInt(arr+20)){
    	console.log("OFF");
    	
-   	$("#one").toggleClass("hidden");
+   	$("#one").animate({ opacity: 1 }, 2000).toggleClass("hidden");
 
 
 
