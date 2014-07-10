@@ -27,7 +27,7 @@ html, body {
     padding-top:100px;
 }
 .title h2{
-    font-size: 68px;
+    font-size: 8px;
     font-family: omnes_attmedium;
     color:rgba(255, 255, 255, 0.9);
     -webkit-font-smoothing:antialiased;
@@ -44,17 +44,17 @@ html, body {
 
 .desc{
 
-    padding-top:250px;
-/*    margin-left:20px;
-
-*/    
-    margin-right:90px;
+    padding-top:200px;
     font-family: omnes_attlight_italic;
-    font-size: 48px;
+    font-size: 100px;
     color:rgba(255, 255, 255, 0.9);
     -webkit-font-smoothing:antialiased;
 }
 
+.desc h3 {
+    width:100%;
+    font-size: 58px;
+}
 .description{
     width:100%;
     display:block;
