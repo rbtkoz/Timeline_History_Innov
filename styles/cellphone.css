@@ -1,16 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
-@media (min-width: @screen-sm-min) { 
- #tour-btn p {
-    padding-top: 24px;
-    padding-right: 80px;
-    padding-bottom: 20px;
-    padding-left: 79px;
-    margin: auto;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: ApexATT-Bold;
-  }
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
 
 /* Medium devices (desktops, 992px and up)
@@ -21,13 +14,17 @@
 @media (min-width: @screen-lg-min) { ... }
 
 i {
-  color: rgba(255, 255, 255, 0.6);
-  padding-left:25px;
-  padding-top:1px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  color: white;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none !important;
+  color: #FCB314 !important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 article {
@@ -39,12 +36,15 @@ article {
 canvas {
   background-color: black;
 }
-html {
+
+html, body {
   height: 100%;
   width: 10000px;
   /*overflow: hidden;*/
   min-width: 100%;
   min-height: 100%;
+  color:white !important;
+  font-family:omnes_attmedium !important;
 }
 
 #element::-webkit-scrollbar { 
@@ -52,23 +52,26 @@ html {
 }
 
 .faux{
-  color:black;
+  opacity:0;
   -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 
 }
 .lead{
-  color: rgba(255, 255, 255, 0.6);
+  opacity:1;
+  color: white;
+  font-family: omnes_attlight_italic;
+  text-align: left;
   -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .load {
-  color:black;
+  opacity:0;
   -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -155,10 +158,78 @@ body {
   margin: 0;
 }
 
+.drag {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
 .go {
  position:relative;
- left:100px;
- top: 300px;
+}
+
+.go i {
+  font-size: 36px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.timeline-nav {
+  position: fixed !important;
+  top: 90%;
+}
+
+.timeline-nav ul li {
+  display:inline;
+}
+
+.timeline-nav ul li i { 
+  padding-right: 50px;
+  font-size: 40px;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.year {
+  display: inline;
+  padding-right: 30px;
+  border-right: 2px #FCB314 solid;
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: omnes_attmedium;
+  color: #FCB314;
+  opacity: 1;
+  position: relative;
+  top: -7px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.year:hover {
+  color: #7A5709 !important;
+}
+
+.timeline-nav ul li i:hover {
+  color: darkgray;
+}
+
+.no-divider {
+   border-right: 0px white solid !important;
+}
+
+.next {
+  padding-right: 0px !important;
+  padding-left:50px;
 }
 
 ul li {

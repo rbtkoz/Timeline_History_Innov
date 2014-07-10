@@ -160,11 +160,18 @@ window.addEventListener('scroll', function(e) {
 	}
 			//some css animation on specific value -test
 			if (currentLocation >= 50) {
-        $("p").removeClass("lead").addClass("load");
-         $("i").addClass("faux");
+        $(".go p").removeClass("lead").addClass("load");
+         $(".go i").addClass("faux");
     } else  {
-        $("p").addClass("lead").removeClass("load");
-        $("i").removeClass("faux");
+        $(".go p").addClass("lead").removeClass("load");
+        $(".go i").removeClass("faux");
+    }
+
+    //adding in the fixed nav
+    if (currentLocation > 100) {
+        $(".timeline-nav").removeClass("hidden fadeOutDown animated").addClass("fadeInUp animated");
+    } else  {
+        $(".timeline-nav").removeClass("fadeInUp animated").addClass("fadeOutDown animated");
     }
     //updating value to latest 
 		lastScroll = st;
