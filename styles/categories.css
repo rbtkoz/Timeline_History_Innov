@@ -44,11 +44,11 @@ html, body {
 
 .desc{
 
-    padding-top:400px;
+    padding-top:250px;
 /*    margin-left:20px;
 
 */    
-    margin-right:50px;
+    margin-right:90px;
     font-family: omnes_attlight_italic;
     font-size: 48px;
     color:rgba(255, 255, 255, 0.9);
@@ -61,7 +61,7 @@ html, body {
     margin:auto;
     position:relative;
     font-family: omnes_attlight;
-    top:120px;
+    top:200px;
     font-size:16px;
     text-transform:uppercase;
     -webkit-font-smoothing:antialiased;
@@ -112,59 +112,59 @@ width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;    
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: rgba(253,194,67, 1.0);
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-/*    border-radius: 50px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
 */}
 
 #tv_circle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: rgba(255,142,51, 1.0);
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-/*    border-radius: 50px;
-*/}
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+}
 
 #internet_circle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: rgba(154,52,152, 1.0);
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-/*    border-radius: 50px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
 */}
 #space_circle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: rgba(56,149,195, 1.0);
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-/*    border-radius: 50px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
 */}
 
 #music_circle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: rgba(139,201,76, 1.0);
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-/*    border-radius: 50px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
 */}
 
 .twinkle{
