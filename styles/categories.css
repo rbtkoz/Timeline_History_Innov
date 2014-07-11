@@ -34,13 +34,14 @@ html, body {
 }
 
 .chooser{
-    width:100%;
     text-align: center;
 }
 
 .categories{
-    padding-top:100px;
-}
+    margin:auto;
+    padding-top:50px;
+/*    padding-right:100px;
+*/}
 
 .desc{
 
@@ -51,9 +52,41 @@ html, body {
     -webkit-font-smoothing:antialiased;
 }
 
+.hello{
+    padding-left:100px;
+}
 .desc h3 {
+    padding-top:200px;
     width:100%;
-    font-size: 58px;
+    font-size: 38px;
+  background: -webkit-gradient(linear,left top,right top,color-stop(0, #4d4d4d),color-stop(0.4, #4d4d4d),color-stop(0.5, white),color-stop(0.6, #4d4d4d),color-stop(1, #4d4d4d)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: slidetounlock 5s infinite;
+  font-weight: 300;
+  padding: 0;
+
+  /*width: 200%;*/
+}
+
+
+#well {
+  padding: 300px 20px 20px 20px;
+  -webkit-border-radius: 30px;
+  /*background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #010101),color-stop(1, #181818));*/
+/*  border: 2px solid #454545; 
+*/  overflow: hidden; 
+}
+
+
+
+@-webkit-keyframes slidetounlock {
+  0% {
+    background-position: -720px 0;
+  }
+  100% {
+    background-position: 720px 0;
+  }
 }
 .description{
     width:100%;
@@ -61,10 +94,11 @@ html, body {
     margin:auto;
     position:relative;
     font-family: omnes_attlight;
-    top:200px;
+    top:230px;
     font-size:16px;
     text-transform:uppercase;
     -webkit-font-smoothing:antialiased;
+
 }
 
 .col-md-3{
@@ -76,7 +110,9 @@ html, body {
 .col-md-2{
     color:rgba(255, 255, 255, 0.9);
     -webkit-font-smoothing:antialiased;
-width:100%;    
+    width:100%;
+
+
 }
 
 .col-md-2 h2{
@@ -84,6 +120,7 @@ width:100%;
     -webkit-font-smoothing:antialiased;
     text-align: center;
     width:100%;   
+    
 }
 
 
@@ -109,9 +146,9 @@ width:100%;
 
 
 #cellphone_circle {
-    display: block;
+    display: inline-block;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;  
     width: 150px;
     height: 150px;
     background: rgba(253,194,67, 1.0);
