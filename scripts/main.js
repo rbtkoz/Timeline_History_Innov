@@ -275,9 +275,13 @@
     // animation fade for each eleemnt
     var baloon = $('.twinkle');
     var i = 0;
-    baloon.each(function() {
+    // self calling function to introduce a small delay of animation
+    (function myLoop (i) {          
+      setTimeout(function () {   
+    
+        baloon.each(function() {
       
-      function Twinkle(){
+        function Twinkle(){
             
         $(baloon[i]).animate({opacity:'0.6',easing: "easeout"}, 2000);
         i=(i < baloon.length-1) ? (i+1) : 0; 
@@ -287,6 +291,10 @@
       }  
       Twinkle();
     }); 
+    
+    if (--i) myLoop(i);      
+   }, 4000)
+  })(10);
     
     // timeout navigate back to idle in 60 seconds
     setTimeout(function() {
