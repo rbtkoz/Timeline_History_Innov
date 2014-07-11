@@ -27,75 +27,113 @@ html, body {
     padding-top:100px;
 }
 .title h2{
-    font-size: 68px;
+    font-size: 8px;
     font-family: omnes_attmedium;
     color:rgba(255, 255, 255, 0.9);
     -webkit-font-smoothing:antialiased;
 }
 
 .chooser{
-    width:100%;
     text-align: center;
 }
 
 .categories{
+    margin:auto;
     padding-top:50px;
-}
+/*    padding-right:100px;
+*/}
 
 .desc{
-    padding-top:50px;
-    padding-left:20px;
-    padding-right:20px;
-    font-family: omnes_attmedium;
-    font-size: 48px;
+
+    padding-top:200px;
+    font-family: omnes_attlight_italic;
+    font-size: 100px;
     color:rgba(255, 255, 255, 0.9);
     -webkit-font-smoothing:antialiased;
 }
 
+.hello{
+    padding-left:100px;
+}
+.desc h3 {
+    padding-top:200px;
+    width:100%;
+    font-size: 38px;
+  background: -webkit-gradient(linear,left top,right top,color-stop(0, #4d4d4d),color-stop(0.4, #4d4d4d),color-stop(0.5, white),color-stop(0.6, #4d4d4d),color-stop(1, #4d4d4d)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: slidetounlock 5s infinite;
+  font-weight: 300;
+  padding: 0;
+
+  /*width: 200%;*/
+}
+
+
+#well {
+  padding: 300px 20px 20px 20px;
+  -webkit-border-radius: 30px;
+  /*background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #010101),color-stop(1, #181818));*/
+/*  border: 2px solid #454545; 
+*/  overflow: hidden; 
+}
+
+
+
+@-webkit-keyframes slidetounlock {
+  0% {
+    background-position: -720px 0;
+  }
+  100% {
+    background-position: 720px 0;
+  }
+}
 .description{
+    width:100%;
     display:block;
     margin:auto;
     position:relative;
-    top: 20px;
     font-family: omnes_attlight;
+    top:230px;
     font-size:16px;
     text-transform:uppercase;
-        -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing:antialiased;
+
 }
 
 .col-md-3{
     color:rgba(255, 255, 255, 0.9);
-/*    -webkit-font-smoothing:antialiased;
-*/
+    -webkit-font-smoothing:antialiased;
+
 }
 
 .col-md-2{
     color:rgba(255, 255, 255, 0.9);
+    -webkit-font-smoothing:antialiased;
+    width:100%;
+
+
+}
+
+.col-md-2 h2{
+    color:rgba(255, 255, 255, 0.9);
+    -webkit-font-smoothing:antialiased;
     text-align: center;
-/*    -webkit-font-smoothing:antialiased;
-*/
-}
-.col-md-8{
-    text-align: center;
-}
-svg {
-    /*display:block;
-    margin:auto;
-
-*/    -webkit-font-smoothing:antialiased;
-/*width:100px;
-height:100px;*/
-
+    width:100%;   
+    
 }
 
+
+
+
+/*
 #cell{
     position:relative;
     left:4.2%;
-}
+}*/
 .home{
-    
-/*    padding-top:200px;
-*/}
+
+}
 
 .fa{
     padding-top:100px;
@@ -103,6 +141,78 @@ height:100px;*/
     color: white;
 
 }
+
+/*CSS circles*/
+
+
+#cellphone_circle {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 150px;
+    height: 150px;
+    background: rgba(253,194,67, 1.0);
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
+*/}
+
+#tv_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    background: rgba(255,142,51, 1.0);
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+}
+
+#internet_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    background: rgba(154,52,152, 1.0);
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
+*/}
+#space_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    background: rgba(56,149,195, 1.0);
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
+*/}
+
+#music_circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    background: rgba(139,201,76, 1.0);
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+/*    border-radius: 150px;
+*/}
+
+.twinkle{
+    position:relative;
+}
+/*#cellphone_line path{
+   
+    width:100px !important;
+    height:100px;
+}*/
+
 
 /*css3 animation on call to action-----------------------------------------*/
 
