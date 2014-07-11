@@ -290,7 +290,7 @@
       
         function Twinkle(){
             
-        $(baloon[i]).animate({opacity:'0.6',easing: "easeOutElastic"}, 2000);
+        $(baloon[i]).animate({opacity:'0.4',easing: "easeOutElastic"}, 2000);
         i=(i < baloon.length-1) ? (i+1) : 0; 
 
         $(baloon[i]).animate({opacity:'1',easing: "easeInElastic"}, 2000, Twinkle);
