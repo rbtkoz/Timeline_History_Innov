@@ -241,3 +241,9 @@ canvas {
 
 
 .row-fluid-nav {height: 100%; display:table-cell; vertical-align: bottom;}
+
+.tutorial {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

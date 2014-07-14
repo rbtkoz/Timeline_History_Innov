@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 var totalImages = 299;
 
 var images = new Array();
@@ -162,9 +164,11 @@ window.addEventListener('scroll', function(e) {
 			if (currentLocation >= 50) {
         $(".go p").removeClass("lead").addClass("load");
          $(".go i").addClass("faux");
+         $(".tutorial").fadeOut("slow");
     } else  {
         $(".go p").addClass("lead").removeClass("load");
         $(".go i").removeClass("faux");
+        $(".tutorial").fadeIn("slow");
     }
 
     //adding in the fixed nav
@@ -179,12 +183,16 @@ window.addEventListener('scroll', function(e) {
 		lastScroll = st;
 		setImage(currentLocation);
 
-});
+	});
+
+
 
 function setImage(newLocation) {
 	context.drawImage(images[newLocation], 0, 0, canv.width, canv.height);
 	console.log(images.length + "length of images");
 }
+
+});
 
 
 
