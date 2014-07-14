@@ -90,7 +90,7 @@ window.addEventListener('scroll', function(e) {
 
 	
 	} if (currentLocation == parseInt(arr)){
-   	console.log("FIRST ");
+   	console.log("FIRST");
    	$("#one").animate({ opacity: 0 }, 2000).toggleClass("hidden");
    	console.log("ON");
   	
@@ -162,11 +162,11 @@ window.addEventListener('scroll', function(e) {
 	}
 			//some css animation on specific value -test
 			if (currentLocation >= 50) {
-        $(".go p").removeClass("lead").addClass("load");
+        $(".go lead").removeClass("lead").addClass("load");
          $(".go i").addClass("faux");
          $(".tutorial").fadeOut("slow");
     } else  {
-        $(".go p").addClass("lead").removeClass("load");
+        $(".go load").addClass("lead").removeClass("load");
         $(".go i").removeClass("faux");
         $(".tutorial").fadeIn("slow");
     }

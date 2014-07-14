@@ -58,8 +58,8 @@ a {
 
 article {
   position:fixed;
-  top:50%;
-  left:50%;
+  top:20%;
+  left:30%;
 }
 
 canvas {
@@ -88,7 +88,7 @@ canvas {
   transition: all 0.5s ease;
 
 }
-.lead{
+.lead {
   opacity:1;
   color: white;
   font-family: omnes_attlight_italic;
@@ -245,5 +245,16 @@ canvas {
 .tutorial {
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
+  transform: rotateX 45;
+  transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+}
+
+#one p {
+  font-family: omnes_attlight;
+  width: 640px;
+  font-size: 18px;
+  margin-left: 95px;
 }
