@@ -65,7 +65,7 @@ article {
 canvas {
   background-color: black;
   position: fixed;
-  z-index: -1;
+  z-index: -10;
   left: 0;
 }
 
@@ -244,17 +244,26 @@ canvas {
 
 .tutorial {
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
-  transform: rotateX 45;
-  transform: rotate(-6deg);
+/*  transform: rotateX 45;
+*/  transform: rotate(6deg);
   -ms-transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
 }
 
+#one{
+  top:10px;
+  left:26% !important;
+
+}
+
 #one p {
+  padding:0px;
+  margin:0px;
   font-family: omnes_attlight;
   width: 640px;
   font-size: 18px;
   margin-left: 95px;
+
 }
