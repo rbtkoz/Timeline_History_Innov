@@ -45,7 +45,7 @@ var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_';
 var file_type =".png";
 
 //call function
-addLoadEvent(preLoad(filename,size,images,file_type));
+preLoad(filename,size,images,file_type);
 
 
 var canv = document.getElementById('background');
@@ -105,9 +105,9 @@ $(canv)
       }
     }
     
-    if(window_loc< lastScroll){
+    if(window_loc < lastScroll){
       
-      if (window_loc - lastScroll > -10){
+      if (window_loc - lastScroll < -10){
         console.log("swiping left!");
         currentLocation -= 1;
         console.log("- deadvanced 1 frame");
