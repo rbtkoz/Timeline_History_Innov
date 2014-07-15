@@ -40,8 +40,8 @@ function addLoadEvent(func) {
 }
 
 var images = new Array();
-var size = 899;
-var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_';
+var size = 1048;
+var filename = 'media/CELLPHONE_';
 var file_type =".png";
 
 //call function
@@ -160,7 +160,7 @@ $(canv)
         }
 
   //First Mobile Phone Service 
-  if (currentLocation > parseInt(arr*4 - 40) && currentLocation < parseInt(arr*4)) {
+  if (currentLocation > parseInt(arr*4 - 100) && currentLocation < parseInt(arr*4)) {
             $("#two").removeClass("hidden fadeOutDown animated").addClass("fadeInUp animated");
         } else  {
             $("#two").removeClass("fadeInUp animated").addClass("fadeOutDown animated");
