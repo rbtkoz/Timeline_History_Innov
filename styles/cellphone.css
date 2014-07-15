@@ -252,16 +252,11 @@ canvas {
   position: fixed;
   bottom: 10px;
   left: 0;
-/*  transform: rotateX 45;
-*/  transform: rotate(6deg);
-  -ms-transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
 }
 
 #one{
   top:10px;
   left:26% !important;
-
 }
 
 #one p {
@@ -271,5 +266,32 @@ canvas {
   width: 640px;
   font-size: 18px;
   margin-left: 95px;
+}
 
+#two {
+  top:400px;
+  left:29% !important;
+}
+
+
+#two img {
+  padding-bottom:10px;
+  padding-left: 49% !important;
+}
+
+#two h3 {
+  padding-bottom:10px;
+  padding-left: 16% !important;
+  font-family: omnes_attmedium;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#two p {
+  padding:0px;
+  margin:0px;
+  font-family: omnes_attlight;
+  width: 640px;
+  font-size: 18px;
+  margin-left: 95px;
 }

@@ -45,7 +45,7 @@ var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_';
 var file_type =".png";
 
 //call function
-preLoad(filename,size,images,file_type);
+addLoadEvent(preLoad(filename,size,images,file_type));
 
 
 var canv = document.getElementById('background');
