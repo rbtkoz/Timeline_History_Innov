@@ -40,10 +40,12 @@ function addLoadEvent(func) {
 }
 
 var images = new Array();
+var size =899;
 var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_';
 var file_type =".jpg";
+
 //call function
-addLoadEvent(preLoad(filename,899,images,file_type))
+addLoadEvent(preLoad(filename,size,images,file_type));
 
 
 var canv = document.getElementById('background');
