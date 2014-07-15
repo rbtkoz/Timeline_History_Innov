@@ -45,7 +45,7 @@ var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_';
 var file_type =".png";
 
 //call function
-addLoadEvent(preLoad(filename,size,images,file_type));
+preLoad(filename,size,images,file_type);
 
 
 var canv = document.getElementById('background');
@@ -75,28 +75,28 @@ $(canv)
     if(window_loc > lastScroll){
 
        if (window_loc - lastScroll < 10){
-    		console.log("swiping left!");
+    		// console.log("swiping left!");
     		currentLocation += 1;
-        console.log("+advanced 1 frame");
-        console.log("frame = " +currentLocation);
-        console.log('window_loc' + window_loc);
+        // console.log("+advanced 1 frame");
+        // console.log("frame = " +currentLocation);
+        // console.log('window_loc' + window_loc);
           
           if (currentLocation >= images.length-1) {
-            console.log("im less than zero");
+            // console.log("im less than zero");
             currentLocation = images.length-1;
             window_loc = $('body').animate({scrollLeft: maxScrollLeft}, 0);
 
           }
       }
     	if (window_loc - lastScroll > 10){
-    		console.log("swiping right!");
+    		// console.log("swiping right!");
     		currentLocation += 5;
-        console.log("+++++advanced 5 frames");
-    		console.log("frame =" +currentLocation);
-        console.log('window_loc' + window_loc);
+      //   console.log("+++++advanced 5 frames");
+    		// console.log("frame =" +currentLocation);
+      //   console.log('window_loc' + window_loc);
 
           if (currentLocation >= images.length-1) {
-            console.log("im less than zero");
+            // console.log("im less than zero");
             currentLocation = images.length-1;
             window_loc = $('body').animate({scrollLeft: maxScrollLeft}, 0);
 
@@ -106,30 +106,31 @@ $(canv)
     }
     
     if(window_loc < lastScroll){
-      
-      if (window_loc - lastScroll < -10){
-        console.log("swiping left!");
-        currentLocation -= 1;
-        console.log("- deadvanced 1 frame");
 
-        console.log("frame = " +currentLocation);
-        console.log('window_loc' + window_loc);
+      if (window_loc - lastScroll > -10){
+        // console.log("swiping left!");
+
+        currentLocation -= 1;
+        // console.log("- deadvanced 1 frame");
+
+        // console.log("frame = " +currentLocation);
+        // console.log('window_loc' + window_loc);
 
         if (currentLocation <= 0) {
-            console.log("im less than zero");
+            // console.log("im less than zero");
             currentLocation = 0;
              window_loc = $('body').animate({scrollLeft: 1}, 0);
         }
       }
         
-      if (window_loc -lastScroll< -10){
-        console.log("swiping right!");
+      if (window_loc -lastScroll < -10){
+        // console.log("swiping right!");
         currentLocation -= 5;
-        console.log("-----deadvanced 5 frames");
-        console.log("frame =" +currentLocation);
-        console.log('window_loc' + window_loc);
+        // console.log("-----deadvanced 5 frames");
+        // console.log("frame =" +currentLocation);
+        // console.log('window_loc' + window_loc);
         if (currentLocation <= 0) {
-            console.log("im less than zero");
+            // console.log("im less than zero");
             currentLocation = 0;
              window_loc = $('body').animate({scrollLeft: 1}, 0);
         }
@@ -159,7 +160,7 @@ $(canv)
         }
 
   //First Mobile Phone Service 
-  if (currentLocation > parseInt(arr*4 - 200) && currentLocation < parseInt(arr*4)) {
+  if (currentLocation > parseInt(arr*4 - 40) && currentLocation < parseInt(arr*4)) {
             $("#two").removeClass("hidden fadeOutDown animated").addClass("fadeInUp animated");
         } else  {
             $("#two").removeClass("fadeInUp animated").addClass("fadeOutDown animated");
