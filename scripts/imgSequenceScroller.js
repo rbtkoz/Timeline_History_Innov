@@ -1,18 +1,50 @@
 $( document ).ready(function() {
 
-var totalImages = 899;
-// var totalImages=299;
+
+//success function simply prints to console
+function loading(img,size){
+    console.log("loading"+img);
+
+    if(img == size-1){
+      console.log("complete!!!!!!!!!!!");
+      
+    }
+}
+
+//loading array function
+function preLoad(file,total_array,array,type){
+  for(var i = 1; i < total_array; i++) {
+  	var file_entry = file + i +type;
+  	var img = new Image;
+  	img.src = file_entry;
+  	array.push(img);
+    loading(i, total_array);
+
+  }
+  return images;
+}
+
+//actual preloader
+function addLoadEvent(func) {
+  var on_load = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (on_load) {
+        on_load();
+      }
+      func();
+    }
+  }
+}
 
 var images = new Array();
-for(var i = 1; i < totalImages; i++) {
-	var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_'; // Filename of each image
-  // var filename = 'http://t-mrkt.com/Lab/media/MASTERCOMP_'; // Filename of each image
+var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_';
+var file_type =".jpg";
+//call function
+addLoadEvent(preLoad(filename,899,images,file_type))
 
-	filename += i + '.jpg';
-	var img = new Image;
-	img.src = filename;
-	images.push(img);
-}
 
 var canv = document.getElementById('background');
 var context = canv.getContext('2d');

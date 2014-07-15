@@ -230,6 +230,12 @@ canvas {
   padding-left:50px;
 }
 
+.load{
+  font-size: 86px !important;
+  color:white;
+}
+
+
 .container-fluid{
   height:100%;
   display:table;
