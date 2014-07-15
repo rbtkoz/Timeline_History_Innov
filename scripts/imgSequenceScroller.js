@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+"use strict";
 
 //success function simply prints to console
 function loading(img,size){
