@@ -1,6 +1,8 @@
 $( document ).ready(function() {
 
-"use strict";
+
+
+// "use strict";
 
 //success function simply prints to console
 function loading(img,size){
@@ -41,16 +43,17 @@ function addLoadEvent(func) {
 }
 
 var images = new Array();
-var size = 1048;
-var filename = 'media/CELLPHONE_';
+var size = 899;
+var filename = 'http://t-mrkt.com/Lab/media/MASTER_COMP_';
 var file_type =".png";
 
 //call function
-preLoad(filename,size,images,file_type);
+addLoadEvent(preLoad(filename,size,images,file_type));
 
 
 var canv = document.getElementById('background');
 var context = canv.getContext('2d');
+
 
 $(canv)
 	.width($(window).width())
@@ -71,6 +74,7 @@ $(canv)
 
 
   window.addEventListener('scroll', function(e) {
+    e.preventDefault();
  	  var window_loc = $(this).scrollLeft();
     
     if(window_loc > lastScroll){
