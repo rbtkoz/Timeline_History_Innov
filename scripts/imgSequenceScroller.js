@@ -16,7 +16,7 @@ function loading(img,size){
 function preLoad(file,total_array,array,type){
   for(var i = 1; i < total_array; i++) {
   	var file_entry = file + i +type;
-  	var img = new Image;
+  	var img = new Image();
   	img.src = file_entry;
   	array.push(img);
     loading(i, total_array);
