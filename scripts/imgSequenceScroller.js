@@ -161,7 +161,7 @@ $(canv)
         }
 
   //First Mobile Phone Service 
-  if (currentLocation > parseInt(arr*4 - 300) && currentLocation < parseInt(arr*4)) {
+  if (currentLocation > parseInt(arr*4 - 200) && currentLocation < parseInt(arr*4)) {
             $("#two").removeClass("hidden fadeOutDown animated").addClass("fadeInUp animated");
         } else  {
             $("#two").removeClass("fadeInUp animated").addClass("fadeOutDown animated");
@@ -210,7 +210,7 @@ $(canv)
    //    }
 
   
-
+   
      
       
 
