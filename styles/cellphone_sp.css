@@ -1,0 +1,33 @@
+
+
+body {
+    width:1920px;
+    height:1080px;
+    background-color: black;
+}
+
+#sprite {
+  /*  width: 1920px; 
+    height: 1080px;
+    background: url('../images/sprite_History_100a.png'), url("../images/sprite_History_100a.png");
+     background-position: 0px 0px, 0px 10000px;*/
+}
+
+.frame{
+
+  background-image: url('../images/sprite_History_100.png');
+   
+  width: 1920px; 
+    height: 1080px;
+  
+    
+}
+
+
+
+/*
+
+background-image: url('../images/bg_ipad1.jpg'), url('../images/bg_ipad2.jpg'), url('../images/bg_ipad3.jpg'), url('../images/bg_ipad4.jpg');
+background-position: center 0px, center 2048px, center 4096px, center 6144px;
+background-size: auto auto;
+background-repeat: no-repeat;*/
