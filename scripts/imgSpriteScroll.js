@@ -1,87 +1,64 @@
 $(document).ready(function(){
 
+//array of sprites
+  var spriteArr=["url('../images/sprite_History_100.png')", "url('../images/sprite_History_100.png')", "url('../images/sprite_History_10 copy.png')", "url('../images/sprite_History_100.png')"];
+  var $example = $('#sprite');
+  $(frame).css( "background-image", spriteArr[0] );
+  var frame = $example.find('.frame')[0];
 
-   
-// var imageUrl= "../images/sprite_History_100.png";
-// $('.frame').css('background-image', 'url(' + imageUrl + ')');
-var spriteArr=["url('../images/sprite_History_100.png')", "url('../images/sprite_History_100.png')", "url('../images/sprite_History_10 copy.png')", "url('../images/sprite_History_100.png')"];
-var $example = $('#sprite');
-$(frame).css( "background-image", spriteArr[0] );
-var frame = $example.find('.frame')[0];
+//motio options
+  var motio = new Motio(frame, {
+    fps: 30,
+    vertical: 1,
+    frames: 100
+  });
+//handy convert to frame function
+  function convertFrame(positiony){
+    var frame = Math.abs(parseInt(positiony)/1080);
+    return frame;
+  }
 
-// var spriteElement = document.getElementById("sprite");
-// $(spriteElement).css("background-image",spriteArr[0]);
+  $(window).swipe( {
+    swipeStatus:function(event, phase, direction, distance, duration, fingers) {
 
-var motio = new Motio(frame, {
-  fps: 30,
-  vertical: 1,
-  frames: 100
+      console.log(event.type);
+      //single tap toggle animation ( this event is for PQ screen windows 7, if testing use mousedown)
+      // if (event.type==="mousedown"){
+      if (event.type==="touchstart"){
+        motio.toggle();
+      }
+      //if direction left play
+      if(direction==="left"){
+         var posval = $(frame).css( "background-position-y" );
+        console.log("swiped left" + distance);
+        console.log(convertFrame(posval) +" frame");
+        motio.play();
+      }
+      //if while playing last frame pause animation
+      motio.on('frame', function () {
+        var posval = $(frame).css( "background-position-y" );
+        $(".numbers h1").text(convertFrame(posval) + " frames");
+        if (posval === "-106920px"){
+          motio.pause();
+      }
+    });
+      //if direction right play reverse
+      if(direction === "right"){
+        var posval = $(frame).css( "background-position-y" );
+        console.log("swiped right" + distance);
+        motio.play({reverse:1});
+      }
+    },
+
+    threshold:0
+
+  });
+
+
+
+
+
 });
-
-
-$(window).swipe( {
-
-
-        
-
-        swipeStatus:function(event, phase, direction, distance, duration, fingers) {
-
-          console.log(event.type);
-          
-          if (event.type==="touchstart"){
-            motio.toggle();
-          }
-
-          if(direction==="left"){
-             var posval = $(frame).css( "background-position-y" );
-            console.log("swiped left" + distance);
-            console.log(convertFrame(posval) +" frame");
-            motio.play();
-          }
-          
-          motio.on('frame', function () {
-            var posval = $(frame).css( "background-position-y" );
-            $(".numbers h1").text(convertFrame(posval) + " frames");
-            if (posval === "-106920px"){
-              motio.pause();
-          }
-        });
-        
-          if(direction === "right"){
-            var posval = $(frame).css( "background-position-y" );
-            console.log("swiped right" + distance);
-            motio.play({reverse:1});
-          }
-        },
-
-        threshold:0
-
-});
-
-
-function convertFrame(positiony){
-  var frame = Math.abs(parseInt(positiony)/1080);
-  return frame;
-}
-
-
-function plusFrame(distance, frame){
-  var dist = distance/10;
-  frame = frame +dist;
-  console.log(frame);
-
-
-}
-
-function minusFrame(distance, frame){
- var dist = distance/10;
-  frame = frame -dist;
-
-
-}
-
-
-
 
 
 
@@ -171,4 +148,3 @@ function minusFrame(distance, frame){
 // // });
 // // sprite.play();
 
-});
