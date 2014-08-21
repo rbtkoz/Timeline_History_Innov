@@ -4,6 +4,8 @@ body {
     width:1920px;
     height:1080px;
     background-color: black;
+   overflow: hidden;
+   position: fixed;
 }
 
 #sprite {
@@ -18,11 +20,18 @@ body {
   background-image: url('../images/sprite_History_100.png');
    
   width: 1920px; 
-    height: 1080px;
+  height: 1080px;
   
     
 }
 
+.numbers{
+
+  font-size:46px;
+  color:rgba(225, 225, 225, 0.5);
+  float: left;
+  padding-left:100px;
+}
 
 
 /*
